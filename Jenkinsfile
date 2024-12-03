@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {  
             steps {  
-                git credentialsId: 'aebay', url: 'https://github.com/[aebay]/node-webapp.git', branch: 'main'
+                git credentialsId: 'github', url: 'https://github.com/[aebay]/node-webapp.git', branch: 'main'
             }  
         }  
         stage('Build Docker Image') {
